@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function </title>
+    <Style>
+        input{
+            text-align: center;
+            color: aqua;
+            margin: 50px 50px 50px 50px;
+        }
+        input[type="button"]:hover{
+            cursor: pointer ;
+            background-color: green;
+        }
+    </Style>
+</head>
+<body>
+    Name: <input type="text" placeholder="Enter name"><br>
+    Email: <input type="email" placeholder="Enter email-id">
+    Password:<input type="password" id="pssd" placeholder="Enter password"><input type="checkbox" onclick="myFunction()">
+    <input type="button" value="click me">
+    <script>
+        let clickbtn=document.querySelector('input[type="button"]');
+        clickbtn.addEventListener('click',showmssg);
+        function showmssg(){
+            alert("Than you for clicking me");
+        }
+        function myFunction() {
+            let x = document.getElementById("pssd");
+            if (x.type === "password") {
+            x.type = "text";
+            } else {
+             x.type = "password";
+            }
+        }
+
+    </script>
+</body>
+</html>

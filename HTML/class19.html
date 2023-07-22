@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-1 Challenge</title>
+    <style>
+       .row-1,.row-2,.row-3{
+        width: 100%;
+        height:100%;
+       }
+       #row-1-b1,#row-1-b2,#row-1-b3,#row-2-b1,#row-2-b2,#row-2-b3,#row-2-b4,#row-3-b1,#row-3-b2,#row-3-b3,#row-3-b4,#row-3-b5{
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            border-radius: 3px;
+            background-color: chocolate;
+            color: white;
+            margin: 5px;
+            padding: 5px;
+            font-size: large;
+            flex: 1;
+       }
+       .row-1{
+         
+       }
+       #r1-1,#r1-2,#r1-3,#r2-1,#r2-2,#r2-3,#r2-4,#r3-1,#r3-2,#r3-3,#r3-4,#r3-5{
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            border-radius: 3px;
+            background-color:beige;
+            margin: 5px;
+            padding: 10px;
+       }
+
+       .row-1,.row-2,.row-3{
+            display: flex;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row-1">
+            <div id="row-1-b1">1
+                <div class="row-1">
+                    <div id="r1-1">1</div>
+                    <div id="r1-2">2</div>
+                    <div id="r1-3">3</div>
+                </div>
+                <div class="row-2">
+                    <div id="r2-1">1</div>
+                    <div id="r2-2">2</div>
+                    <div id="r2-3">3</div>
+                    <div id="r2-4">4</div>
+                </div>
+                    <div class="row-3">
+                    <div id="r3-1">1</div>
+                    <div id="r3-2">2</div>
+                    <div id="r3-3">3</div>
+                    <div id="r3-4">4</div>
+                    <div id="r3-4">5</div>
+                </div>
+            </div>
+            <div id="row-1-b2">2</div>
+            <div id="row-1-b3">3</div>
+        </div>
+        <div class="row-2">
+            <div id="row-2-b1">1</div>
+            <div id="row-2-b2">2</div>
+            <div id="row-2-b3">3</div>
+            <div id="row-2-b4">4</div>
+        </div>
+        <div class="row-3">
+            <div id="row-3-b1">1</div>
+            <div id="row-3-b2">2</div>
+            <div id="row-3-b3">3</div>
+            <div id="row-3-b4">4</div>
+            <div id="row-3-b5">5</div>
+        </div>
+    </div>
+</body>
+</html>

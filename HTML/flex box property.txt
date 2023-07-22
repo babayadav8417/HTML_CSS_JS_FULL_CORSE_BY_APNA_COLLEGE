@@ -1,0 +1,37 @@
+ 		:Flex dierection property:
+
+Display :flex , will make all box in horizental line
+Display:block, will make all box in vertical line
+
+flex-direction:row,same like dispay :flex;
+flex-direction:column, same like display:block
+flex-direction:column-reverse
+
+justify-content:flex-start;
+justify-content:flex-end;
+justify-content:center;
+justify-content:space-between;
+
+align-items:baseline;
+align-items:flex-start;
+align-items:flex-end;
+align-items:center;
+align-items:stretch;
+
+align-self:stretch;
+align-self:baseline;
+align-self:flex-start;
+align-self:flex-end;
+align-self:center;
+
+As much bigger order will be that item will come at last;
+flex-basis:100px; it is to set maximum width ;
+flex-grow:2 no excel or pixcel; it is for growing size fast relatively to other;
+
+flex-shrink:2; it is for less size fast relatively to other;
+
+
+
+
+
+

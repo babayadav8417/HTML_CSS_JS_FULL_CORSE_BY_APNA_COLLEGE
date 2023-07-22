@@ -1,0 +1,56 @@
+ h3{
+    color: brown;
+    
+}
+ p,a{
+    color: green;
+} 
+ a{
+    color: green;
+} 
+/* li{
+    list-style-type:lower-roman;
+} */
+.special{
+    color: blue;
+    font-weight: lighter;
+}
+span.special,li.special{
+    color: orange;
+    font-weight: bold;
+}
+li em{
+    color: purple;
+} 
+/* will apply just after having p tag after h1 */
+h1+p{ 
+    color: brown;
+    font-size: 200%;
+} 
+/* pseudo class  when you bring your cursor it will work  */
+a:hover{
+    color: saddlebrown;
+    text-decoration: none;
+}
+body h1+p .special{
+    color: yellow;
+    background-color: black;
+    padding: 10px;
+}
+#heading{
+    color: red;
+    background-color: black;
+}
+p#one{
+    color: rebeccapurple;
+}
+/* li[class="a"]{
+    font-size: 300%;
+} */
+li[class~="a"]{
+    font-size: 300%;
+}
+*{
+    list-style-type : none;
+}
+

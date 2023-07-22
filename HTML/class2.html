@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="class2.css">
+</head>
+<body>
+    <h1>PAYMENT FORM</h1><hr style="border: 1px solid rgb(196, 145, 145); width: 50%; margin-right: 395px;">
+    <p style="color: red;; ">Required fields are followed by *</p>
+    <div class="container">
+    <h3>Contact Information</h3><hr style="border: 1px solid rgb(196, 145, 145);">
+    <form action="">
+        <label for="name">Name*:</label>
+        <input style="width:40% ;" type="text" name="name" id="name" required placeholder="your name">
+        <br>
+        <h4>Select your gender</h4>
+        <p style="text-align:center;"> Male <input type="radio" name="gender" id="male" required >Female <input type="radio" name="gender"     id="female" required>
+        </p >
+        
+        <p style="text-align: left; margin-left:180px;">Address:</p><textarea name="address" id="address" cols="48" rows="8" placeholder="Enter your address"></textarea>
+        <p>Email*: <input style="width:41% ;" type="email"  name="email" id="email" required placeholder="abc@gmail.com"></p>
+        <p>Pincode: <input style="width:40% ;"type="number" name="pin" id="pin" required placeholder="221303"></p>
+        <hr style="border: 1px solid rgb(196, 145, 145);">
+        <h2>Payment Information</h2><hr style="border: 1px solid rgb(196, 145, 145);">
+        <p style="text-align: left; margin-left:180px;">Card type :
+            <select name="card_type" id="card_type" required style="width: 50%;">
+                <option value="">--select card type--</option>
+                <option value="visa_card">Visa_card</option>
+                <option value="master_card">Master_card</option>
+                <option value="Rupay_card">Rupay_card</option>
+                <option value="Debit_card">Debit_card</option>
+            </select>
+        
+        </p>
+        <p style="text-align: left; margin-left:180px;">Card Number*: <input type="number" name="card_number" id="card_number" required placeholder="2034-4843-8590" style="width: 44%;"></p>
+        <p style="text-align: left; margin-left:180px;"> Expiry_date*: <input type="date" name="exp_date" id="exp_date" required style="width: 46%;"></p>
+        <p style="text-align: left; margin-left:180px;">CVV*: <input type="password" name="cvv" id="cvv" required placeholder="Enter CVV" style="width: 30%">
+            <input type="checkbox" onclick="myFunction()">Show Password</p>
+        <script>
+        function myFunction() {
+            var x = document.getElementById("cvv");
+            if (x.type === "password") {
+            x.type = "text";
+            } else {
+             x.type = "password";
+            }
+        }
+        </script>
+        <input type="submit" value="Pay Now">
+        <script>
+            let payBtn=document.querySelector('input[type="submit"]');
+            payBtn.addEventListener('click',payNow);
+            function payNow(){
+
+                alert("Thank for the payment")
+            }
+        </script>
+        <input type="reset" value="Refress" > 
+    </form>
+</div>
+</body>
+</html>
